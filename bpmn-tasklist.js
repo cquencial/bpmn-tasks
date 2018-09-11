@@ -59,6 +59,7 @@ const BpmnTaskListCollection = new Mongo.Collection(collectionName)
 BpmnTaskListCollection.name = collectionName
 BpmnTaskListCollection.schema = BpmnTasklistCollectionSchema
 tasklist.collection = BpmnTaskListCollection
+tasklist.methods = {}
 
 Meteor.startup(() => {
   if (Meteor.isServer) {
